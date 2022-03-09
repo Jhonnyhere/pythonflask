@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="main">
+<div>
+<form method="POST">
+    <h1>Register Here</h1>
+    <label>Name </label>
+    <br>
+    <input type ="text" name="name" placeholder="Enter Your Name"> <br>
+
+      <label>Father Name </label>
+    <br>
+    <input type ="text" name="fatherName" placeholder="Enter Your Father's Name"> <br>
+
+     <label>D.O.B </label>
+    <br>
+    <input type ="date" name="dob" placeholder="Enter Your date of birth"> <br>
+
+    <label>Gender</label>
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <label for ="male">Male</label>
+    <input type="radio" id="male" name="gender">
+    <label for ="female">Female</label>
+    <input type="radio" id="female" name="gender">
+    <label for ="other">Other</label>
+    <input type="radio" id="Other" name="gender">
+    <br>
+
+    <label>Address </label>
+    <br>
+    <input type ="text" name="address" placeholder="Enter Your Address"> <br>
+
+
+    <label>Mobile No.</label>
+    <br>
+    <input type ="number" name="mobileNo" placeholder="Enter Your Age"> <br>
+
+     <label>Email </label>
+    <br>
+    <input type ="email" name="email" placeholder="Enter Your Email"> <br>
+
+    <br>
+
+    <input type="reset" name="reset">
+    <input type="submit" name="submit">
+
+</form>
+
+    </div>
+<div class="centered">
+    <form>
+    <h1>
+        Login Here
+    </h1>
+    <label><em>Username/Email</em></label> <br>
+    <input type="text" placeholder="Enter your Username/email"> <br>
+    <label><em>Password</em></label> <br>
+    <input type="password" placeholder="Enter Your Password">
+    </form>
+</div>
+<div>
+    <h1>
+        Welcome to our registration pannel  </h1> <br>
+
+    <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged. It was popularised in the 1960s with the release of
+        Letraset sheets containing Lorem Ipsum passages,
+        and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+    </p>
+
+</div>
+
+</div>
+<button id="btn"><a href="{{ url_for('data',index=0) }}">Click here to know about students </a></button>
+</body>
+</html>
